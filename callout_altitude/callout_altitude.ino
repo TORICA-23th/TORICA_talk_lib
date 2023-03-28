@@ -19,7 +19,7 @@ void setup()
 void loop()
 {
 
-  speaker.talk_str(); //メンバ関数の呼び出しを行った
+  speaker.talk_num(1232); //メンバ関数の呼び出しを行った
   delay(500);
 
 }

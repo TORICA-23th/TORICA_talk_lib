@@ -16,4 +16,6 @@ class TORICA_talk {
   public ://コンストラクト化
     void talk_str (char str[]);//関数のプロトタイプ宣言
 
+    void talk_num(int num);
+
 };

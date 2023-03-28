@@ -2,15 +2,14 @@
 #include <Arduino.h>
 #include <Wire.h>
 
+//質問（このクラスオブジェクトの生成をしないとしたのCONVERT_numでtalk_strが使えないのではないか？）
 
-TORICA_talk speaker;//質問（このクラスオブジェクトの生成をしないとしたのCONVERT_numでtalk_strが使えないのではないか？）
 
+void TORICA_talk::talk_num(int num){
 
-void COVERT_num(int num){
-
-  char str[];
+  char str[64];
   sprintf(str,"<NUM VAL=%d>",num);
-  speaker.talk_str(str);// メンバ関数の呼び出しのように　クラス名.関数名　でＯＫ？？
+  talk_str(str);  // メンバ関数の呼び出しのように　クラス名.関数名　でＯＫ？？
   
 }
 
