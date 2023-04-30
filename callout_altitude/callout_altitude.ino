@@ -1,8 +1,9 @@
 //高度を音声にして伝えるプログラム
-
+//高度、対地速度の順番で発言
 
 #include <Wire.h>
 #include "TORICA_talk.h"
+#include "BF_AquesTalkPico.h"
 
 TORICA_talk speaker; //クラスの変数定義(クラスのオブジェクト定義→メモリ上に)
 
